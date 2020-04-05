@@ -17,65 +17,62 @@
 
 
 <body>
+    <div class="overlay">
+        <div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>
+    </div>
     <h2> Deep Learning in Action </h2>
-    <div class="">
-        <div class="row">
-            <div class="col-sm-1"></div>
+    <div class="row">
+        <div class="col-sm-1"></div>
 
-            <div class="col-sm-10">
-                <center>
-                    <h3>Question Answering using Wikipedia</h3>
-                    <p> <b>Models</b>: Albert - Electra</p>
-                </center>
-                <div class="overlay">
-                    <div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>
-                </div>
+        <div class="col-sm-10">
+            <center>
+                <h3>Question Answering using Wikipedia</h3>
+                <p> <b>Models</b>: Albert - Electra</p>
+            </center>
 
-                <h4> Inputs </h4>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="input_question">Question</label>
-                        <input type="text" class="form-control" id="input_question"></textarea>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="max_paragraphs" id="label_max_paragraphs">Top k paragraphs: 2</label>
-                        <input type="range" class="custom-range" min="1" max="10" value="2" step="1"
-                            id="max_paragraphs">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label></label>
-                        <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-process">Get
-                            answer</button>
-                    </div>
+            <h4> Inputs </h4>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="input_question">Question</label>
+                    <input type="text" class="form-control" id="input_question"></textarea>
                 </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="wiki_link">URL used as reference context</label>
-                        <input type="text" class="form-control" id="wiki_link" readonly></input>
-                    </div>
+                <div class="form-group col-md-3">
+                    <label for="max_paragraphs" id="label_max_paragraphs">Top k paragraphs: 2</label>
+                    <input type="range" class="custom-range" min="1" max="10" value="2" step="1" id="max_paragraphs">
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-                        <label for="text_paragraphs">Candidates paragraphs</label>
-                        <textarea class="form-control txt_input" id="text_paragraphs" readonly> </textarea>
-                    </div>
+                <div class="form-group col-md-3">
+                    <label></label>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-process">Get
+                        answer</button>
                 </div>
-                <h4> Answers </h4>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="text_paragraphs">Albert</label>
-                        <textarea class="form-control txt_response" id="text_albert" readonly> </textarea>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="text_paragraphs">Electra</label>
-                        <textarea class="form-control txt_response" id="text_electra" readonly> </textarea>
-                    </div>
-                </div>
-
             </div>
-            <div class="col-sm-1"></div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="wiki_link">URL used as reference context</label>
+                    <input type="text" class="form-control" id="wiki_link" readonly></input>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="text_paragraphs">Candidates paragraphs</label>
+                    <textarea class="form-control txt_input" id="text_paragraphs" readonly> </textarea>
+                </div>
+            </div>
+            <h4> Answers </h4>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="text_paragraphs">Albert</label>
+                    <textarea class="form-control txt_response" id="text_albert" readonly> </textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="text_paragraphs">Electra</label>
+                    <textarea class="form-control txt_response" id="text_electra" readonly> </textarea>
+                </div>
+            </div>
+
         </div>
+        <div class="col-sm-1"></div>
     </div>
 </body>
 

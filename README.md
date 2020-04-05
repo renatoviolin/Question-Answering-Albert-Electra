@@ -1,5 +1,5 @@
 # Question-Answering-Albert-Electra
-Question Answering using Albert and Electra
+Question Answering using Albert and Electra using wikipedia text as context.
 
 ## Description
 This repository implements a pipeline to answer questions using wikipedia text. Bellow is the pipeline:
@@ -9,3 +9,7 @@ This repository implements a pipeline to answer questions using wikipedia text. 
 4. Selected paragraphs are used as input to Albert and Electra models.
 5. Both models try to find the answer given the candidate paragraphs.
 
+![Question 1](img_1.png)
+![Question 2](img_2.png)
+![Question 3](img_3.png)
+![BM Scores](img_4.png)

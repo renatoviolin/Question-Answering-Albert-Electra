@@ -31,6 +31,8 @@ def get_answer():
             bm_1_idx = bm_1[bm_1[:, 1] > 1][:num_paragraphs, 0]  # two most similar
             bm_1_idx = np.array(bm_1_idx, dtype=int)
             text = ' '.join(text[i] for i in sorted(bm_1_idx))
+            print('======= BM25 SCORES =======')
+            print(bm_1)
             if len(bm_1_idx) == 0:
                 return app.response_class(response=json.dumps("Text passages not found. Provide more information in your question"), status=500, mimetype='application/json')
 

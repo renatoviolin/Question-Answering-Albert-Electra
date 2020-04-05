@@ -5,6 +5,7 @@
 	text-align: center;
 	display: none;
 	z-index: 1000 !important;
+	background: #ccc8;
 }
 
 .spinner-border {
