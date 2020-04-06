@@ -9,6 +9,11 @@ This repository implements a pipeline to answer questions using wikipedia text. 
 4. Selected paragraphs are used as input to Albert and Electra models.
 5. Both models try to find the answer given the candidate paragraphs.
 
+
+## Running
+To predict with Electra, you need to download the pre-trained model from [here](https://drive.google.com/open?id=1nAsDHvIQVckrzOnuStyiJodnzr-S4Lvi). Extract the folder and adjust the DATA_MODEL_DIR path in qa_predict.py to point to the root foler.
+
+
 ![Question 1](img_1.png)
 ![Question 2](img_2.png)
 ![Question 3](img_3.png)

@@ -7,7 +7,6 @@ import collections
 import json
 import os
 import shutil
-import pprint
 
 import tensorflow.compat.v1 as tf
 
@@ -24,9 +23,7 @@ from electra.finetune.qa.qa_tasks import QAExample
 session_config = tf.ConfigProto()
 session_config.gpu_options.allow_growth = True
 
-# DATA_MODEL_DIR = '/home/renato/checkpoint/qa-electra/'
-DATA_MODEL_DIR = '/Users/renato/Documents/deep_learning/TensorFlow/electra_large_qa/'
-# DATA_MODEL_DIR = './electra_model/'
+DATA_MODEL_DIR = '/Users/renato/Documents/deep_learning/TensorFlow/electra_large_qa_model/'
 INIT_CHECKPOINT = DATA_MODEL_DIR + 'model/model.ckpt-64000'
 
 class FinetuningModel(object):
