@@ -11,7 +11,7 @@ This repository implements a pipeline to answer questions using wikipedia text. 
 
 
 ## Running
-To predict with Electra, you need to download the pre-trained model from [here](https://drive.google.com/open?id=1nAsDHvIQVckrzOnuStyiJodnzr-S4Lvi). Extract the folder and adjust the DATA_MODEL_DIR path in [qa_predict.py](qa_predict.py) to point to the root foler.
+To predict with Electra, you need to download the pre-trained model from [here](https://drive.google.com/open?id=1nAsDHvIQVckrzOnuStyiJodnzr-S4Lvi). Extract the folder and adjust the DATA_MODEL_DIR (line 26) in [qa_predict.py](qa_predict.py) to point to the root folder.
 
 
 ![Question 1](img_1.png)
