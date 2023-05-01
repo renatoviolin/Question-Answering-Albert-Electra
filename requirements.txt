@@ -1,6 +1,6 @@
 beautifulsoup4==4.8.2
 bs4==0.0.1
-Flask==1.1.2
+Flask==2.3.2
 google==2.0.3
 nltk==3.4.5
 rank-bm25==0.2
